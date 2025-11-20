@@ -19,6 +19,7 @@ char * strncat(char *restrict dst, const char *restrict src, size_t size);
 size_t strlen (const char *restrict src);
 size_t strnlen(const char *restrict src, size_t size);
 char * strerror(int err);
+char * strdup(const char *s);
 
 __END_DECLS
 

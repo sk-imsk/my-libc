@@ -1,6 +1,7 @@
 #include <string.h>
 #include <errno.h>
 
+
 char * stpcpy(char *restrict dst, const char *restrict src){
 	
 	while (*dst++ = *src++){
@@ -153,3 +154,11 @@ char * strndup(const char *s, size_t size){
 
 }
 #undef malloc
+
+char * strerror(int err){
+	static char unkbuf[32];
+
+	snprintf(unkbuf, sizeof(unkbuf), "error %d try man errno and find the error", err);
+
+	return unkbuf;
+}

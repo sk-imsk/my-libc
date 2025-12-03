@@ -155,6 +155,10 @@ char * strndup(const char *s, size_t size){
 }
 #undef malloc
 
+
+
+#ifdef  _STDIO_H_
+
 char * strerror(int err){
 	static char unkbuf[32];
 
@@ -162,3 +166,13 @@ char * strerror(int err){
 
 	return unkbuf;
 }
+
+#else 
+char * strerror(int err){
+	static char unkbuf[32] = "unknown error";
+
+	
+	return unkbuf;
+	
+}
+#endif

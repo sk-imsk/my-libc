@@ -139,3 +139,7 @@
 #define ERESTART	-1	/* restart syscall */
 #define EJUSTRETURN	-2	/* don't modify regs, just return */
 #endif
+
+
+extern int *__errno_loc(void);
+#define errno (*__errno_loc())

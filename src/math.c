@@ -1,4 +1,10 @@
-double ceil(double x);
-double floor(double x);
-double pow  (double x, double y);
 
+//double log(double n){ // natural log
+//
+//	if (n < 0){
+//	return 0;
+//	}
+//
+//
+//
+//}

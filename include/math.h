@@ -15,7 +15,9 @@ __BEGIN_DECLS
 
 double ceil(double x);
 double floor(double x);
-
+double tan(double num);
+double cos(double num);
+double sin(double num);
 
 __END_DECLS
 

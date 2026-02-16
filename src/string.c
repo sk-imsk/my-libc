@@ -132,6 +132,7 @@ size_t strnlen(const char *restrict src, size_t size){
 
 }
 #define malloc(a) (NULL) // beacuse i have not made malloc yet to get rid of errors
+#warning malloc not defined (if it is defined just remove this and the line above) 
 char * strdup(const char *s){
 	char * ret = malloc(strlen(s));
 	if (ret == NULL){

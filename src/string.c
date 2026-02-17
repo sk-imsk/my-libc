@@ -1,3 +1,10 @@
+// 
+// String.c (not niche :(
+//
+// made by me
+//
+//
+
 #include <string.h>
 #include <errno.h>
 

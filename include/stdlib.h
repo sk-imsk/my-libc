@@ -16,10 +16,18 @@ typedef struct {
 typedef struct {
  long long quot;
  long long rem;
-} lldiv_t;
+} lldiv_t; // longer
+
+typedef __WCHAR_TYPE__ wchar_t;
 
 #define EXIT_SUCCESS 0
 #define EXIT_FAILURE 1
+#define RAND_MAX 0x7FFFFFFF
+#define MB_CUR_MAX RAND_MAX
+
+
+
+
 
 __BEGIN_DECLS
 
@@ -27,6 +35,7 @@ __dead void exit(int i);
 int abs (int i); 
 int atoi(const char * str);
 
+int system(const char * str)
 
 
 __END_DECLS

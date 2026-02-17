@@ -1,3 +1,5 @@
+// stddef.h (niche)
+
 #ifndef _STDDEF_H_
 #define _STDDEF_H_ 
 #include <_stddef.h>
